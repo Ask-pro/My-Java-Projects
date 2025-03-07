@@ -17,8 +17,8 @@ public class Student{
          Student student1 = new Student();
          Student student2 = new Student();
          Student student3 = new Student();
-         Student student4 = new Student();
-         Student student5 = new Student();
+         Student student44 = new Student();
+         Student student55 = new Student();
 
          student1.displaydetails(); // Calling method to display welcome message
 
@@ -26,7 +26,7 @@ public class Student{
          student1.displaydetails("Harry Potter",20,1); //student1
          student2.displaydetails("Hermoine Granger",19,2); //student2
          student3.displaydetails("Ron Weasley",19,3); //student3
-         student4.displaydetails("Draco Malfoy",20,4); //student4
-         student5.displaydetails("Neville Longbottom",21,5); //student5
+         student44.displaydetails("Draco Malfoy",20,4); //student4
+         student55.displaydetails("Neville Longbottom",21,5); //student5
     }
 }
