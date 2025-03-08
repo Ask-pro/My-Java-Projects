@@ -4,7 +4,7 @@ public class Student{
         System.out.println("Name of the student: " + name);
         System.out.println("Age: " + age);
         System.out.println("Enrollment Number: " + id);
-        System.out.println("House Name:" + house + "\n"
+        System.out.println("House Name:" + house + "\n");
      }
 
      // Method to display welcome message
