@@ -16,29 +16,17 @@ public class Student{
          //Creating Student instances
          Student student1 = new Student();
          Student student2 = new Student();
-<<<<<<< HEAD
-         Student student31 = new Student();
-         Student student451 = new Student();
-         Student student56 = new Student();
-=======
          Student student3 = new Student();
-         Student student443534 = new Student();
+         Student student4 = new Student();
          Student student5 = new Student();
->>>>>>> new-branch1
 
          student1.displaydetails(); // Calling method to display welcome message
 
         // Calling method to display student details
          student1.displaydetails("Harry Potter",20,1); //student1
          student2.displaydetails("Hermoine Granger",19,2); //student2
-<<<<<<< HEAD
-         student31.displaydetails("Ron Weasley",19,3); //student3
-         student451.displaydetails("Draco Malfoy",20,4); //student4
-         student56.displaydetails("Neville Longbottom",21,5); //student5
-=======
          student3.displaydetails("Ron Weasley",19,3); //student3
-         student443534.displaydetails("Draco Malfoy",20,4); //student4
+         student4.displaydetails("Draco Malfoy",20,4); //student4
          student5.displaydetails("Neville Longbottom",21,5); //student5
->>>>>>> new-branch1
     }
 }
