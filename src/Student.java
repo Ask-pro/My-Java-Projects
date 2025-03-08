@@ -15,7 +15,7 @@ public class Student{
 
          //Creating Student instances
          Student student1 = new Student();
-         Student student23 = new Student();
+         Student student2 = new Student();
          Student student3 = new Student();
          Student student4 = new Student();
          Student student5 = new Student();
@@ -24,7 +24,7 @@ public class Student{
 
         // Calling method to display student details
          student1.displaydetails("Harry Potter",20,1); //student1
-         student23.displaydetails("Hermoine Granger",19,2); //student2
+         student2.displaydetails("Hermoine Granger",19,2); //student2
          student3.displaydetails("Ron Weasley",19,3); //student3
          student4.displaydetails("Draco Malfoy",20,4); //student4
          student5.displaydetails("Neville Longbottom",21,5); //student5
