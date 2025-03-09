@@ -2,7 +2,7 @@ public class Bank {
 
     String Account_holder = "Anu";
     String Account_number1 = "1234asdf5678";
-    String Account_number2 = "1234asdf5423";
+    String Account_number2 = "1234asdf5426";
     double balance = 5000;
 
     // Method to create an account and show details
