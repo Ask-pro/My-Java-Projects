@@ -1,4 +1,4 @@
-public class Person {
+public class Person { //Hierarchial
     String name; // Person name
     int age; // Person age
 
