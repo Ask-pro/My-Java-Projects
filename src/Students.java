@@ -1,4 +1,4 @@
-public class Studentmanagement { // Main class
+public class Students { // Main class
 
     static class School {
         String name;   // Student's name
@@ -31,8 +31,8 @@ public class Studentmanagement { // Main class
             house = studenthouse; // Initialize house specific to Student class
         }
 
-        void displaydetails() {
-            displayinfo();  // Display name and age from parent class
+        void displayinfo() { //method overriding as sub class use same method as superclass
+            super.displayinfo();  // Display name and age from parent class, user super since it is method override
             System.out.println("Enrollment Number: " + id); // Print ID
             System.out.println("House Name: " + house + "\n"); // Print house
         }
@@ -50,7 +50,7 @@ public class Studentmanagement { // Main class
         students[0].displaymessage(); // Display welcome message
 
         for (Student student : students) { // Loop through each student
-            student.displaydetails();  // Display student details
+            student.displayinfo();  // Display student details
         }
     }
 }
