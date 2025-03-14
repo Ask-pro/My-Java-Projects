@@ -8,9 +8,19 @@ public class Person{
         age = person_age;
     }
 
-    void introduce() {
-        System.out.println("Hello! This is " + name + ". I am " + age + " years old.");
+    void board(){System.out.println("Hello! I am a teacher.");}
+
+    void board(int age){
+        if(age<18) {
+            System.out.println("Hello! I am a student.");
+        }
     }
+
+    void introduce() {
+        System.out.println("This is " + name + ". I am " + age + " years old.");
+    }
+
+
 
     static class Student extends Person {
         String school_name;
@@ -24,7 +34,7 @@ public class Person{
 
         void introduce(){
             super.introduce();
-            System.out.println("I am studying in "+school_name+". I belong to "+house+"!\n");
+            System.out.print("I am studying in "+school_name+". I belong to "+house+"!\n\n");
         }
     }
 
@@ -37,7 +47,7 @@ public class Person{
 
         void introduce(){
             super.introduce();
-            System.out.println("I am teaching "+subject+".\n");
+            System.out.print("I am teaching "+subject+".\n\n");
         }
     }
 }
@@ -50,6 +60,7 @@ class Person_main{
         teacher[2] = new Person.Teacher("Anu Sri",45,"English");
 
         for (Person.Teacher teachers: teacher){
+            teachers.board();
             teachers.introduce();
         }
 
@@ -61,6 +72,7 @@ class Person_main{
         student[4] = new Person.Student("Neville",15,"Hogwarts","Hufflepuff");
 
         for (Person.Student students: student){
+            students.board(students.age);
             students.introduce();
         }
     }
