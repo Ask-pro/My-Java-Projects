@@ -58,7 +58,7 @@ class Person_main {
         // Teacher array
         Person.Teacher[] teacher = new Person.Teacher[3];
         teacher[0] = new Person.Teacher("Anu", 29, "Maths");
-        teacher[1] = new Person.Teacher("Sri", 31, "Science");
+        teacher[1] = new Person.Teacher("Sri", 32, "Science");
         teacher[2] = new Person.Teacher("Anu Sri", 45, "English");
 
         // Loop through teachers
