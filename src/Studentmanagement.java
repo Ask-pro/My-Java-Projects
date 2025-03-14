@@ -44,7 +44,7 @@ public class Studentmanagement { // Main class
         students[0] = new Student("Harry Potter", 20, 1, "Gryffindor"); // Student 1
         students[1] = new Student("Hermione Granger", 19, 2, "Gryffindor"); // Student 2
         students[2] = new Student("Ron Weasley", 19, 3, "Gryffindor"); // Student 3
-        students[3] = new Student("Draco Malfoy", 20, 4, "Slytherin"); // Student 4
+        students[3] = new Student("Draco Malfoy", 17, 4, "Slytherin"); // Student 4
         students[4] = new Student("Neville Longbottom", 21, 5, "Gryffindor"); // Student 5
 
         students[0].displaymessage(); // Display welcome message
