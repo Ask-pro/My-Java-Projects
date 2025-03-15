@@ -48,7 +48,7 @@ public class Person { //Hierarchial
 
         void introduce() { // Override introduce
             super.introduce(); // Call parent introduce
-            System.out.print("I am teaching " + subject + ".\n\n");
+            System.out.print("I teach " + subject + ".\n\n");
         }
     }
 }
@@ -56,27 +56,29 @@ public class Person { //Hierarchial
 class Person_main {
     public static void main(String[] args) {
         // Teacher array
-        Person.Teacher[] teacher = new Person.Teacher[3];
-        teacher[0] = new Person.Teacher("Anu", 29, "Maths");
-        teacher[1] = new Person.Teacher("Sri", 35, "Science");
-        teacher[2] = new Person.Teacher("Anu Sri", 45, "English");
+        Person[] person = new Person[5];
+        person[0] = new Person.Teacher("Hagrid", 29, "Charms");
+        person[1] = new Person.Teacher("Lupus", 35, "Dark Arts");
+        person[2] = new Person.Teacher("Mc.Gonagall", 45, "Wizardry");
+        person[3] = new Person.Teacher("Snape ", 65, "Potions");
+        person[4] = new Person.Teacher("Dumbledore", 75, "Magic");
+
 
         // Loop through teachers
-        for (Person.Teacher teachers : teacher) {
+        for (Person teachers : person) {
             teachers.board(); // Call board
             teachers.introduce(); // Call introduce
         }
 
         // Student array
-        Person.Student[] student = new Person.Student[5];
-        student[0] = new Person.Student("Harry", 9, "Hogwarts", "Gryffindor");
-        student[1] = new Person.Student("Ron", 11, "Hogwarts", "Gryffindor");
-        student[2] = new Person.Student("Hermoine", 15, "Hogwarts", "Gryffindor");
-        student[3] = new Person.Student("Draco", 15, "Ministry of Magic", "Slytherin");
-        student[4] = new Person.Student("Neville", 15, "Hogwarts", "Hufflepuff");
+        person[0] = new Person.Student("Harry", 9, "Hogwarts", "Gryffindor");
+        person[1] = new Person.Student("Ron", 11, "Hogwarts", "Gryffindor");
+        person[2] = new Person.Student("Hermoine", 15, "Hogwarts", "Gryffindor");
+        person[3] = new Person.Student("Draco", 15, "Ministry of Magic", "Slytherin");
+        person[4] = new Person.Student("Neville", 15, "Hogwarts", "Hufflepuff");
 
         // Loop through students
-        for (Person.Student students : student) {
+        for (Person students : person) {
             students.board(students.age); // Call overloaded board
             students.introduce(); // Call introduce
         }
