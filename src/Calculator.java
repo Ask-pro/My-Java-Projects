@@ -1,5 +1,5 @@
 public class Calculator {
-    void details(){ // Welcome message
+    static void details(){ // Welcome message
         System.out.println("Please choose your action from below.\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n");
     }
 
@@ -39,7 +39,7 @@ public class Calculator {
 
     public static void main(String[] args){
         Calculator calc = new Calculator(); // Creating an instance
-        calc.details();
+        Calculator.details();
         int action = 5;
         if(action==1){
             calc.add(10,5); // Adding 2 numbers
